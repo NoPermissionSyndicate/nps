@@ -282,26 +282,23 @@ footer {
 
     margin-top: 25px;
 }
-.bg-flow {
+.bg-flow{
     position: fixed;
-    inset: -20%;
+    inset: -10%;
 
-    width: auto;
-    height: auto;
+    width: 120%;
+    height: 120%;
 
     z-index: -1;
+    pointer-events: none;
 
     background:
         radial-gradient(circle at 25% 30%, rgba(255,0,0,0.25), transparent 45%),
         radial-gradient(circle at 70% 55%, rgba(0,140,255,0.25), transparent 50%),
         radial-gradient(circle at 45% 80%, rgba(160,0,255,0.18), transparent 55%);
 
-    filter: blur(80px);
-    opacity: 1;
-
+    filter: blur(60px);
     animation: flowMove 12s ease-in-out infinite;
-
-    will-change: transform;
 }
 
 @keyframes flowMove {
